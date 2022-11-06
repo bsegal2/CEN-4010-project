@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*
+give the background a color
+*/
+* {
+    background: #1f1f1f;
+    color: white; 
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /*Display all movies on the same row, no wrapping*/
+  .img {
+    display: flex;
+    flex-wrap: nowrap; 
   }
-  to {
-    transform: rotate(360deg);
+  
+  .searchbox, button{
+    background-color: white;
+    color: #1f1f1f;
   }
-}
+  
+  .container { 
+    position: relative;
+    background-color: white; 
+    color: black; 
+  }
+  .center, .container {
+    background-color: rgb(137, 137, 137); 
+    margin: 0;
+    position: absolute;
+    font-size: 25px;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .container-two { 
+    position: relative;
+    background-color: white; 
+    color: black; 
+  }
+  .center-two, .container-two {
+    background-color: rgb(137, 137, 137); 
+    margin: 0;
+    position: absolute;
+    font-size: 20px;
+    top: 65%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  h1{
+    text-align: center;
+    
+  }
+  
+  .sign-in-button, .create-account-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
