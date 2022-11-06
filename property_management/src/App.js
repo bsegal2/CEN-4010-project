@@ -42,10 +42,10 @@ import SignIn from './components/SignIn';
                    navbarScroll
                >
                  <Nav.Link as={Link} to="/">Home</Nav.Link>
-                 <Nav.Link as={Link} to="/popular">Search property</Nav.Link>
-                 <Nav.Link as={Link} to="/popular">ViewProperty</Nav.Link>
+                 <Nav.Link as={Link} to="/">{<SearchBar/>}</Nav.Link>
+                 <Nav.Link as={Link} to="/viewproperty">ViewProperty</Nav.Link>
                  <Nav.Link as={Link} to="/search">Reviews</Nav.Link>
-                 <Nav.Link as={Link} to="/signin">Sign out</Nav.Link>
+                 <Nav.Link as={Link} to="/signout">Sign out</Nav.Link>
                </Nav>
              </Navbar.Collapse>
              </Container>
@@ -57,12 +57,13 @@ import SignIn from './components/SignIn';
              {/**Set up all of the routes to navigate to the proper pages */}
              {/**Navigate to the home page*/}
              <Route path="/" element={<Home/>}/>
-             <Route path="/popular" element={<SearchBar/>}/>
-             <Route path="/search" element={<ViewProperty/>}/>
+             <Route path="/" element={<SearchBar/>}/>
+             <Route path="/viewproperty" element={<ViewProperty/>}/>
              <Route path="/critics" element={<Reviews/>}/>
+             <Route path="/signout" element={<SignOut/>}/>
              <Route path="/signin" element={<SignIn/>}/>
-             <Route path="/signout" element={<SignUp/>}/>
-             <Route path="/signup" element={<SignOut/>}/>
+             <Route path="/signup" element={<SignUp/>}/>
+             
            </Routes>
          </div>
        </div>
