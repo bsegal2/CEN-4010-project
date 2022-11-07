@@ -14,8 +14,7 @@
    Link
  } from "react-router-dom";
  import ViewProperty from './components/ViewProperty';
- import Home from './components/Home';
- import SignOut from './components/SignUp';
+ import SignOut from './components/SignOut';
  import SearchBar from './components/SearchBar';
  import Reviews from './components/Reviews';
 import SignUp from './components/SignUp';
@@ -41,10 +40,9 @@ import SignIn from './components/SignIn';
                    style={{ maxHeight: '100px' }}
                    navbarScroll
                >
-                 <Nav.Link as={Link} to="/">Home</Nav.Link>
-                 <Nav.Link as={Link} to="/">{<SearchBar/>}</Nav.Link>
+                 <Nav.Link>{<SearchBar/>}</Nav.Link>
                  <Nav.Link as={Link} to="/viewproperty">ViewProperty</Nav.Link>
-                 <Nav.Link as={Link} to="/search">Reviews</Nav.Link>
+                 <Nav.Link as={Link} to="/critics">Reviews</Nav.Link>
                  <Nav.Link as={Link} to="/signout">Sign out</Nav.Link>
                </Nav>
              </Navbar.Collapse>
@@ -56,8 +54,7 @@ import SignIn from './components/SignIn';
            <Routes>
              {/**Set up all of the routes to navigate to the proper pages */}
              {/**Navigate to the home page*/}
-             <Route path="/" element={<Home/>}/>
-             <Route path="/" element={<SearchBar/>}/>
+             <Route path="/" element={<SignIn/>}/>
              <Route path="/viewproperty" element={<ViewProperty/>}/>
              <Route path="/critics" element={<Reviews/>}/>
              <Route path="/signout" element={<SignOut/>}/>

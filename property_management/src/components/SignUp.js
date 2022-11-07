@@ -42,6 +42,7 @@ function SignUp() {
             Already registered? <a href="/signin">Sign in!</a>
             </p>
         </form>
+        
     </div>
   )
 }

@@ -4,7 +4,7 @@ import SignIn from './SignIn'
 function Home() {
   return (
     <div>
-        {<SignIn/>}
+        Home
     </div>
 )
 
